@@ -1,9 +1,9 @@
 class Owner
-  attr_accessor :name
+  attr_accessor :name, :species
   @@all = []
 
-  def initialize(name)
-    @name = name
+  def initialize(species)
+    @species = species
     @@all << self
   end
 
@@ -18,4 +18,6 @@ class Owner
   def self.reset_all
     @@all = @@all.clear
   end
+
+
 end
