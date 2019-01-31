@@ -51,4 +51,10 @@ class Owner
       element.mood = "happy"
     end
   end
+
+  def play_with_cats
+    @pets[:cats].each do |element|
+      element.mood = "happy"
+    end
+  end
 end
